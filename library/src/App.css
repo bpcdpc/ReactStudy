@@ -1,0 +1,33 @@
+.library {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 30px auto;
+}
+
+.book-item {
+  width: 200px;
+}
+
+.book-item img {
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.book-item h2 {
+  font-size: 18px;
+}
+.book-item div {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.book-item div p {
+  font-size: 14px;
+}
+
+.book-item div p:not(:last-child)::after {
+  content: "·";
+  padding-left: 0.25rem;
+}
