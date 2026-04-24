@@ -9,11 +9,6 @@ function App() {
       <div className="member-box">
         <MemberBox init={0} />
       </div>
-      {/* <div className="member-cards">
-        {members.map((m) => (
-          <MemberCard member={m} />
-        ))}
-      </div> */}
     </div>
   );
 }
