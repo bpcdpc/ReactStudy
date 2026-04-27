@@ -13,10 +13,16 @@ export default function MemberBox({ members }: MemberBoxProps) {
   const len = members.length;
 
   return (
-    <div>
-      <MemberCard member={members[(index + len) % len]} />
-      <NavButton content={"⏴ 이전"} move={prev} />
-      <NavButton content={"다음 ⏵"} move={next} />
+    <div className="container">
+      <h1>💜 Who's Who? 💜</h1>
+      <h2>⊹ ࣪ ﹏𓊝﹏𓂁﹏⊹ ࣪ ˖</h2>
+      <div className="member-box">
+        <MemberCard member={members[(index + len) % len]} />
+      </div>
+      <div>
+        <NavButton content={"⏴ 이전"} move={prev} />
+        <NavButton content={"다음 ⏵"} move={next} />
+      </div>
     </div>
   );
 }

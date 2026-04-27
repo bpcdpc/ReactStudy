@@ -3,5 +3,9 @@ interface NavButtonProps {
   move: () => void;
 }
 export default function NavButton({ content, move }: NavButtonProps) {
-  return <button onClick={move}>{content}</button>;
+  return (
+    <button className="arrow-btn" onClick={move}>
+      {content}
+    </button>
+  );
 }
