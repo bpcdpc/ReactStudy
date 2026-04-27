@@ -6,6 +6,7 @@
 // import HelloTo from "./component/HelloTo";
 
 import EventBasic from "./component/EventBasic";
+import LoginControl from "./component/LoginControl";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <SayHello myName="빈영" to="선우" />
       <HelloTo name="빈영" age="46" width="100px" height="100px" />
       <HelloTo name="선우" age="8" width="50px" height="50px" /> */}
+      <LoginControl />
     </>
   );
 }
