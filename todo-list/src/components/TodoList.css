@@ -1,0 +1,15 @@
+.todo-list ul {
+  padding: 0;
+}
+.todo-list .search {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0.75rem 0.5rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.todo-list .search:focus {
+  outline: none;
+  border-bottom: 1px solid #1272e0;
+}

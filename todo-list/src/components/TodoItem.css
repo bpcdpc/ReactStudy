@@ -1,0 +1,37 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.todo-item:last-child {
+  border-bottom: 0;
+}
+.todo-item > * {
+  display: block;
+}
+.todo-item > input {
+  width: 20px;
+}
+.todo-item > p {
+  flex: 1;
+}
+.todo-item > p > a[role="button"] {
+  cursor: pointer;
+}
+.todo-item > p > a.done {
+  color: #999;
+  text-decoration: line-through;
+}
+.todo-item > span {
+  font-size: 85%;
+  color: #666;
+}
+.todo-item > button {
+  border: 0;
+  background-color: #777;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+}
