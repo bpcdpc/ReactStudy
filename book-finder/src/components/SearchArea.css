@@ -1,0 +1,22 @@
+.search-area {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+}
+
+.search-bar {
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.book-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.pagination {
+  height: 50px;
+  flex-shrink: 0;
+}

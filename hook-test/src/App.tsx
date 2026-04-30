@@ -12,6 +12,7 @@
 // import UseMemoTest from "./components/UseMemoTest";
 import UseReducerSample from "./components/UseReducerSample";
 import UseRefSample from "./components/UseRefSample";
+import InfoManager from "./components/InfoManager";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <UseCallbackSample /> */}
       <UseRefSample />
       <UseReducerSample />
+      <InfoManager />
     </>
   );
 }
