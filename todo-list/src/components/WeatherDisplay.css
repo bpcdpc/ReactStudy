@@ -1,0 +1,13 @@
+.weather-display {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.weather-display img {
+  display: block;
+  width: 45px;
+}

@@ -1,5 +1,5 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,react
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,visualstudiocode,react
+# Edit by bpcdpc on 20260506: Added .env 
 
 ### macOS ###
 # General
@@ -43,6 +43,11 @@ logs
 
 node_modules
 bower_components
+
+# Environment variable files
+.env
+.env.local
+.env.*.local
 
 *.sublime*
 

@@ -25,7 +25,7 @@ import NotFound from "./components/NotFound";
 //     ),
 //   },
 //   {
-//     path: "/product/*",
+//     path: "/product/:id",
 //     element: (
 //       <>
 //         <Header />
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <Main /> },
-      { path: "product/*", element: <Product /> },
+      { path: "product/:id", element: <Product /> },
       // { path: "*", element: <NotFound /> },
     ],
   },
@@ -76,7 +76,7 @@ function App() {
     //   <Header />
     //   <Routes>
     //     <Route path="/" element={<Main />} />
-    //     <Route path="/product/*" element={<Product />} />
+    //     <Route path="/product/:id" element={<Product />} />
     //     <Route path="*" element={<NotFound />} />
     //   </Routes>
     // </BrowserRouter>

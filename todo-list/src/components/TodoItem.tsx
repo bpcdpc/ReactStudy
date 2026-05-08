@@ -1,6 +1,9 @@
 import "./TodoItem.css";
 
+import React, { useContext } from "react";
+
 import { type Todo } from "../types/Todo";
+import { TodoDispatchContext } from "../contexts/TodoContext";
 
 interface TodoItemProps {
   todo: Todo;
@@ -8,8 +11,11 @@ interface TodoItemProps {
   onDelete: (targetId: number) => void;
 }
 
-export default function TodoItem({ todo, onUpdate, onDelete }: TodoItemProps) {
+export default React.memo(function TodoItem({ todo }: TodoItemProps) {
+  const { onUpdate, onDelete } = useContext(TodoDispatchContext);
   const { id, isDone, content, createDate } = todo;
+
+  console.log(`${id} TodoItem 렌더링`);
 
   const onUpdateItem = () => {
     onUpdate(id);
@@ -39,4 +45,4 @@ export default function TodoItem({ todo, onUpdate, onDelete }: TodoItemProps) {
       <button onClick={onDeleteItem}>삭제</button>
     </li>
   );
-}
+});
